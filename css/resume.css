@@ -1,0 +1,122 @@
+.resume {
+    background-color: var(--navyBlue);
+    padding: 70px 0;
+}
+.resume_inner {
+    display: flex;
+    flex-direction: column;
+}
+.resume__top{
+    max-width: 600px;
+    width: 100%;
+    margin: 0 auto;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.resume__top-subtitle{
+    position: relative;
+    font-size: 60px;
+    color: rgb(77, 75, 75);
+    font-weight: 700;
+    z-index: -1;
+    text-transform: capitalize;
+    transform: translateY(20px);;
+}
+.resume__title {
+    color: var(--whiteColor);
+    font-size: 22px;
+    font-weight: 600;
+    max-width: 200px;
+    width: 100%;
+    margin: 0 auto;
+}
+.resume__text {
+    color: var(--lightGray);
+    line-height: 1.4;
+    text-align: center;
+    max-width: 540px;
+    width: 100%;
+    margin: 20px auto 30px;
+}
+.resume__buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 20px;
+    margin-bottom: 30px;
+}
+.resume__button {
+    color: var(--whiteColor);
+    border-radius: 5px;
+    padding: 12px 30px;
+}
+.resume__button-button-1{
+    background-color: var(--primaryColor);
+}
+.resume__button-button-2{
+    transition: background-color .3s ease;
+    &:hover{
+        background-color: var(--primaryColor);
+    }
+}
+.resume__items {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.resume__item {
+    background-color: var(--secondary-color-dark);
+    padding: 50px 20px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transform: rotateY(180deg);
+    transition:  background-color .3s ease;
+    &:hover{
+        background-color: var(--primaryColor);
+        .ri-graduation-cap-fill{
+            color: var(--whiteColor);
+        }
+    }
+}
+.resume__item.active{
+    transform: rotateY(0);
+    transition: transform  1s ease;
+}
+.ri-graduation-cap-fill {
+    color: var(--primaryColor);
+    font-size: 40px;
+    margin-bottom: 20px;
+    display: block;
+}
+.resume__item-ttile {
+    color: var(--whiteColor);
+    font-size: 18px;
+    font-weight: 600;
+    text-align: center;
+    max-width: 260px;
+    width: 100%;
+    margin-bottom: 20px;
+    line-height: 1.5;
+}
+.resume__item-subtitle {
+    color: var(--lightGray);
+    margin-bottom: 20px;
+}
+.resume__item-text {
+    color: var(--lightGray);
+    line-height: 1.4;
+    text-align: center;
+    max-width: 270px;
+    width: 100%;
+}
+
+@media (max-width: 1000px){
+    .resume {
+        padding: 20px 0;
+    }
+}
